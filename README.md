@@ -25,7 +25,7 @@ And after a gradle wrapper has been created, one can use:
    a shell script for OS X and Linux. These scripts allow you to run a Gradle build without requiring that Gradle be installed 
    on your system.
 
-3. To run the "gradlew" (gradle wrapper) executable, on *nix systems,  prefix gradlew with "./" e.g.:
+3. To run the "gradlew" (gradle wrapper) script/executable, on *nix systems,  prefix gradlew with "./" e.g.:
 
 ```
   $ ./gradlew build
