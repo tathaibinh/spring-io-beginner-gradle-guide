@@ -1,10 +1,9 @@
-# Building Java Projects with Gradle
+# Building Java Projects with Gradle (spring.io guide)
 
+This is a good beginner guide that walks through using Gradle to build a simple Java project:
 https://spring.io/guides/gs/gradle/#scratch
 
-This is a good beginner guide that walks through using Gradle to build a simple Java project.
-
-## Some Learnings
+## Some Learnings From The Experience
 
 1. Some gradle commands are:
 
