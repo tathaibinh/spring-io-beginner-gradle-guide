@@ -1,0 +1,38 @@
+// Add a plugin that enables basic Java build functionality
+apply plugin: 'java'
+
+// The repositories block indicates that the build should resolve its dependencies from the Maven Central repository
+repositories {
+    mavenCentral()
+}
+
+// The following  maps through to javac (the java compiler):
+// - sourceCompatability is the source language level (JDK 1.8); and 
+// - targetCompatability is the level of the bytecode that is generated (also JDK 1.8)
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// Declare 3rd party libraries - e.g. compile "group:library:version"
+// - "compile" dependency, indicating that it should be available during compile-time (and if you were building a WAR file,
+//   included in the /WEB-INF/libs folder of the WAR
+// - "providedCompile" - required dependencies for compiling the project code, but that will be provided at runtime by a 
+//   container running the code (for example, the Java Servlet API)
+// - "testCompile" - dependencies used for compiling and running tests, but not required for building or running the project’s runtime code
+dependencies {
+    compile "joda-time:joda-time:2.2"
+    testCompile "junit:junit:4.12"
+}
+
+// Name the JAR artifact - the "jar" block specifies how the JAR file will be named
+// Use "jar tvf build/libs/gs-gradle-0.1.0.jar" to take peek at the jar file contents
+// Note that dependencies are NOT bundled up in the jar file; and
+// the jar file is NOT runnable - MUST add "apply plugin: 'application'" and "mainClassName = 'hello.HelloWorld'" below 
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+}
+
+// Use gradle's plugin to make the code runnable and use "./gradlew run" to run it
+apply plugin: 'application'
+
+mainClassName = 'hello.HelloWorld'
