@@ -22,9 +22,7 @@ This is a good beginner guide that walks through using Gradle to build a simple 
     ./gradlew run
   ```
 
-02 The Gradle Wrapper is the preferred way of starting a Gradle build. It consists of a batch script for Windows and 
-   a shell script for OS X and Linux. These scripts allow you to run a Gradle build without requiring that Gradle be installed 
-   on your system.
+02 The Gradle Wrapper is the preferred way of starting a Gradle build. It consists of a batch script for Windows and a shell script for OS X and Linux. These scripts allow you to run a Gradle build without requiring that Gradle be installed on your system.
 
 03 To run the "gradlew" (gradle wrapper) script/executable, on *nix systems,  prefix gradlew with "./" e.g.:
 
