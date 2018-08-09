@@ -50,7 +50,7 @@ This is a good beginner guide that walks through using Gradle to build a simple 
 08 To get git to stop tracking an erroneously previously tracked file, it must be removed from the git index. To do that:
 
   ``` bash
-    git rm --cached filename-of-erroneously-tracked-file
+    git rm --cached <filename-of-erroneously-tracked-file>
   ```
 
   Then update the `.gitignore` file with the file/folder pattern so that it is will not be tracked in future, then commit.
