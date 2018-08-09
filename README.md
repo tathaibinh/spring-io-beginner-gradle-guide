@@ -62,3 +62,7 @@ This is a good beginner guide that walks through using Gradle to build a simple 
 11 If needed, to remove blobs from the repo, use `git filter-branch` <https://git-scm.com/docs/git-filter-branch> to rewrite branches, or, alternatively, use another tool like *BFG Repo-Cleaner <https://rtyley.github.io/bfg-repo-cleaner/>* which appearently does the same thing but faster. :)
 
 ❇️🍰❇️
+
+## Future Things
+
+Redo this but use Docker
