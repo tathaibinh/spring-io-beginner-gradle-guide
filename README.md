@@ -57,4 +57,6 @@ This is a good beginner guide that walks through using Gradle to build a simple 
 
 09 Ensure binary files, like JAR files, are not tracked i.e. added to the `.gitignore` file.
 
-10 Try to selectively add folders and files i.e. `git add <file>`, rather than adding all files at once i.e. `git add .`.
+10 Try to selectively add folders and files i.e. `git add <file>`, rather than adding all files at once i.e. `git add .` .
+
+❇️🍰❇️
