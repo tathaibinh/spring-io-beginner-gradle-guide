@@ -59,4 +59,6 @@ This is a good beginner guide that walks through using Gradle to build a simple 
 
 10 Try to selectively add folders and files i.e. `git add <file>`, rather than adding all files at once i.e. `git add .` .
 
+11 If needed, to remove blobs from the repo, use `git filter-branch` to rewrite branches, or, alternatively, use another tool like *BFG Repo-Cleaner <https://rtyley.github.io/bfg-repo-cleaner/>* which appearently does the same thing but faster. :)
+
 ❇️🍰❇️
